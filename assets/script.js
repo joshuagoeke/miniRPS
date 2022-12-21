@@ -91,11 +91,11 @@ console.log(gameResult);
 keepScore();
 console.log(gameStats);
 if (gameResult === "win"){
-    alert("You win!\n Stats:\n" + gameStats)
+    alert("You win!\n Stats:\n" + JSON.stringify(gameStats))
 } else if (gameResult === "lose"){
-    alert("You lost.\n Stats:\n" + gameStats)
+    alert("You lost.\n Stats:\n" + JSON.stringify(gameStats))
 } else {
-    alert("We tied. Blast!\n Stats:\n" + gameStats)
+    alert("We tied. Blast!\n Stats:\n" + JSON.stringify(gameStats))
 };
 
 var playAgain = confirm("Would you like to play again?");
